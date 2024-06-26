@@ -1,103 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrical Appliances Status</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="flat_area" id="living_space">
-        <div class="area-title">
-            <div class="inline-block">
-                <img class="appliance-icon" src="icons/icons8-sofa-100.png">
+    <div id="wrapper">
+        <div class="area">
+            <div class="area-title">
+                <img src="icons/icons8-bathroom-100.png" alt="">
+                <h1>Pièce n°1</h1>
+            </div>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-light-100.png" alt="">
+                    <h2>Appareil n°1</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                </div>
             </div>
         </div>
-        <div class="appliance">
-            <img class="appliance-icon" src="icons/icons8-lamp-100.png">
-            <button class="grid-button" data-url="https://www.example5.com" data-color="100">
-                Off
-            </button>
-            <button class="grid-button" data-url="https://www.example3.com" data-color="110">
-                10%
-            </button>
-            <button class="grid-button" data-url="https://www.example4.com" data-color="120">
-                20%
-            </button>
-            <button class="grid-button" data-url="https://www.example5.com" data-color="130">
-                30%
-            </button>
-            <button class="grid-button" data-url="https://www.example3.com" data-color="140">
-                40%
-            </button>
-            <button class="grid-button" data-url="https://www.example4.com" data-color="150">
-                50%
-            </button>
-            <button class="grid-button" data-url="https://www.example5.com" data-color="160">
-                60%
-            </button>
-            <button class="grid-button" data-url="https://www.example3.com" data-color="170">
-                70%
-            </button>
-            <button class="grid-button" data-url="https://www.example4.com" data-color="180">
-                80%
-            </button>
-            <button class="grid-button" data-url="https://www.example5.com" data-color="190">
-                90%
-            </button>
-            <button class="grid-button" data-url="https://www.example5.com" data-color="200">
-                100%
-            </button>
-        </div>
-        <div class="appliance">
-            <img class="appliance-icon" src="icons/icons8-laptop-100.png">
-            <button class="grid-button" data-url="https://www.example5.com" data-color="1">
-                Off
-            </button>
-            <button class="grid-button" data-url="https://www.example3.com" data-color="3">
-                Idle
-            </button>
-            <button class="grid-button" data-url="https://www.example4.com" data-color="2">
-                On
-            </button>
-        </div>
-    </div>
-    <div class="flat_area" id="bath_and_laundry_space">
-        <div class="area-title">
-            <div class="inline-block">
-                <img class="appliance-icon" src="icons/icons8-bathroom-100.png">
-                <img class="appliance-icon" src="icons/icons8-toilet-100.png">
-                <img class="appliance-icon" src="icons/icons8-washing-machine-100.png">
+        <div class="area">
+            <div class="area-title">
+                <img src="icons/icons8-sofa-100.png" alt="">
+                <h1>Pièce n°2</h1>
+            </div>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-tv-100.png" alt="">
+                    <h2>Appareil n°1</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                </div>
+            </div>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-light-100.png" alt="">
+                    <h2>Appareil n°2</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                    <input type="range" min="0" max="100" step="10">
+                </div>
+            </div>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-lamp-100.png" alt="">
+                    <h2>Appareil n°3</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                </div>
             </div>
         </div>
-        <div class="appliance">
-            <img class="appliance-icon" src="icons/icons8-light-100.png">
-            <button class="grid-button" data-url="https://www.example2.com" data-color="1">
-                Off
-            </button>
-            <button class="grid-button" data-url="https://www.example2.com" data-color="2">
-                On
-            </button>
-        </div>
-    </div>
-    <div class="flat_area" id="sleeping_space">
-        <div class="area-title">
-            <div class="inline-block">
-                <img class="appliance-icon" src="icons/icons8-bed-100.png">
+        <div class="area">
+            <div class="area-title">
+                <img src="icons/icons8-bed-100.png" alt="">
+                <h1>Pièce n°3</h1>
             </div>
-        </div>
-        <div class="appliance">
-            <img class="appliance-icon" src="icons/icons8-light-100.png">
-            <button class="grid-button" data-url="https://www.example2.com" data-color="1">
-                Off
-            </button>
-            <button class="grid-button" data-url="https://www.example2.com" data-color="2">
-                On
-            </button>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-light-100.png" alt="">
+                    <h2>Appareil n°1</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                </div>
+            </div>
+            <div class="appliance">
+                <div class="appliance-title">
+                    <img src="icons/icons8-lamp-100.png" alt="">
+                    <h2>Appareil n°2</h2>
+                </div>
+                <div class="appliance-controls">
+                    <button class="appliance-btn appliance-off">Off</button>
+                    <button class="appliance-btn appliance-on">On</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-<footer>
-    Icons from <a href="https://icons8.com/">icons8.com</a>.
-</footer>
+
 </html>
