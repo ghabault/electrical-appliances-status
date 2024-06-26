@@ -1,0 +1,32 @@
+.grid-button {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-button[data-color="1"] {
+    background-color:Tomato;
+}
+
+.grid-button[data-color="2"] {
+    background-color: YellowGreen;
+}
+
+.grid-button[data-color="3"] {
+    background-color: GoldenRod;
+}
+
+.grid-button:hover {
+    filter: brightness(0.8);
+}
+
+.appliance-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.inline-block {
+   display: inline-block;
+}
