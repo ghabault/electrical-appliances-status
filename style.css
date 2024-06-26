@@ -63,6 +63,12 @@ body {
 .appliance-off {
     background-color: #dc9e9e;
 }
+.appliance-idle {
+    background-color: #f1ce6f;
+}
+.appliance-charging {
+    background-color: #beddac;
+}
 .appliance-on {
     background-color: #beddac;
 }
