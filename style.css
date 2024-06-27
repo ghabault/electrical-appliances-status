@@ -13,6 +13,16 @@ body {
     --space-L : 2rem;
     --space-XL : 4rem;
 }
+
+.page-footer {
+    background-color: #f2f2f2;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
 .area-title {
     display: flex;
     align-items: center;
