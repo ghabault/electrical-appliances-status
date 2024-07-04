@@ -45,6 +45,7 @@ body {
 .appliance-title {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     padding: var(--space-M);
     padding-left: var(--space-XL);
     padding-right: var(--space-L);
@@ -56,6 +57,7 @@ body {
 .appliance-title h2 {
     font-size: 1rem;
     font-weight: 600;
+    flex-shrink: 0;
 }
 .appliance-controls {
     display: flex;
@@ -94,13 +96,14 @@ body {
         margin-bottom: var(--space-L)
     }
     .area-title {
-        justify-content: center;
+        overflow-x: scroll;
     }
     .appliance {
         flex-direction: column;
     }
     .appliance-title {
         padding-left: var(--space-L);
+        justify-content: center;
     }
     .appliance-controls {
         flex-direction: column;
