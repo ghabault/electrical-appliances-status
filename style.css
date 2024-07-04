@@ -99,6 +99,7 @@ footer {
     appearance: none;
     -webkit-appearance: none;
     position: absolute;
+    background-color: #f1ce6f;
     top: 50%;
     left: 50%;
     margin: 0;
@@ -111,18 +112,23 @@ footer {
     cursor: col-resize;
 }
 .custom-range > input[type="range"][step] {
-    background-color: transparent;
-    background-image: repeating-linear-gradient(to right, #f1ce6f33, #f1ce6f33 calc(10% - 1px), #8d7f59 10%);
+    background-color: #f1ce6f55;
+    background-image: repeating-linear-gradient(to right, transparent, transparent calc(10% - 1px), #00000055 10%);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0 50%;
 }
 .custom-range > input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 0;
-    box-shadow: -20rem 0 0 20rem #f1ce6fAA;
+    box-shadow: -20rem 0 0 20rem #f1ce6f;
+    mix-blend-mode: color;
 }
 .custom-range > input[type=range]::-moz-range-thumb {
     border: none;
     width: 0;
-    box-shadow: -20rem 0 0 20rem rgba(255, 255, 255, 0.2);
+    box-shadow: -20rem 0 0 20rem #f1ce6f;
+    mix-blend-mode: color;
 }
 .custom-range-output{
     font-size: .7rem;
