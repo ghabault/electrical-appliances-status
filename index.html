@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <datalist id="slider-markers">
+    <!-- <datalist id="slider-markers">
         <option>10</option>
         <option>20</option>
         <option>30</option>
@@ -20,7 +20,7 @@
         <option>80</option>
         <option>90</option>
         <option>100</option>
-    </datalist>
+    </datalist> -->
     <div id="wrapper">
         <div class="area" id="entrance-space">
             <div class="area-title">
@@ -250,7 +250,9 @@
                 </div>
                 <div class="appliance-controls">
                     <button class="appliance-btn appliance-off">Off</button>
-                    <input type="range" min="10" max="100" step="10" >
+                    <div class="custom-range">
+                        <input type="range" min="0" max="100" value="50" step="10">
+                    </div>
                 </div>
             </div>
             <div class="appliance">
@@ -260,7 +262,9 @@
                 </div>
                 <div class="appliance-controls">
                     <button class="appliance-btn appliance-off">Off</button>
-                    <input type="range" min="10" max="100" step="10" list="slider-markers">
+                    <div class="custom-range">
+                        <input type="range" min="0" max="100" value="50" step="10">
+                    </div>
                 </div>
             </div>
             <div class="appliance">
@@ -339,7 +343,7 @@
             </div>
         </div>
     </div>
-    <footer class="page-footer">
+    <footer>
         Icons from <a href="https://icons8.com/">icons8.com</a>.
     </footer>
     <script src="script.js"></script>

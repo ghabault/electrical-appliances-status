@@ -1,4 +1,4 @@
-@import url(input-range-style.css);
+/* @import url(input-range-style.css); */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     --space-XL : 4rem;
 }
 
-.page-footer {
+footer {
     background-color: #f2f2f2;
     padding: 15px 0;
     text-align: center;
@@ -89,6 +89,45 @@ body {
 }
 .appliance-on:hover {
     background-color: #a4db84;
+}
+.custom-range {
+    position: relative;
+    height: 3rem;
+    width: calc(20rem - 1px);
+    overflow-x: hidden;
+}
+.custom-range > input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    height: 3rem;
+    transform: translate(-50%, -50%);
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: col-resize;
+}
+.custom-range > input[type="range"][step] {
+    background-color: transparent;
+    background-image: repeating-linear-gradient(to right, #f1ce6f33, #f1ce6f33 calc(10% - 1px), #8d7f59 10%);
+}
+.custom-range > input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    box-shadow: -20rem 0 0 20rem #f1ce6fAA;
+}
+.custom-range > input[type=range]::-moz-range-thumb {
+    border: none;
+    width: 0;
+    box-shadow: -20rem 0 0 20rem rgba(255, 255, 255, 0.2);
+}
+.custom-range-output{
+    font-size: .7rem;
+    font-weight: 700;
 }
 
 @media (max-width: 30rem) {
